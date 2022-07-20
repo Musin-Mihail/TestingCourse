@@ -8,68 +8,86 @@ namespace TestProject1
         [TestMethod]
         public void Test1()
         {
-            int number = 2;
-            Assert.AreEqual("два", convertInt.Convert(number));
+            convertInt.number = 2;
+            Assert.AreEqual("два", convertInt.Convert());
         }
         [TestMethod]
         public void Test2()
         {
-            int number = 22;
-            Assert.AreEqual("двадцатьдва", convertInt.Convert(number));
+            convertInt.number = 22;
+            Assert.AreEqual("двадцать два", convertInt.Convert());
         }
         [TestMethod]
         public void Test2_2()
         {
-            int number = 18;
-            Assert.AreEqual("восемьнадцать", convertInt.Convert(number));
+            convertInt.number = 18;
+            Assert.AreEqual("восемнадцать", convertInt.Convert());
         }
         [TestMethod]
         public void Test3()
         {
-            int number = 222;
-            Assert.AreEqual("двестидвадцатьдва", convertInt.Convert(number));
+            convertInt.number = 222;
+            Assert.AreEqual("двести двадцать два", convertInt.Convert());
         }
         [TestMethod]
         public void Test3_2()
         {
-            int number = 214;
-            Assert.AreEqual("двестичетырнадцать", convertInt.Convert(number));
+            convertInt.number = 214;
+            Assert.AreEqual("двести четырнадцать", convertInt.Convert());
         }
         [TestMethod]
         public void Test4()
         {
-            int number = 2222;
-            Assert.AreEqual("две тысячи двестидвадцатьдва", convertInt.Convert(number));
+            convertInt.number = 2222;
+            Assert.AreEqual("две тысячи двести двадцать два", convertInt.Convert());
         }
         [TestMethod]
         public void Test4_2()
         {
-            int number = 2216;
-            Assert.AreEqual("две тысячи двестишестьдесят", convertInt.Convert(number));
+            convertInt.number = 2216;
+            Assert.AreEqual("две тысячи двести шестнадцать", convertInt.Convert());
         }
         [TestMethod]
         public void Test5()
         {
-            int number = 22222;
-            Assert.AreEqual("двадцатьдве тысячи двестидвадцатьдва", convertInt.Convert(number));
+            convertInt.number = 22222;
+            Assert.AreEqual("двадцать две тысячи двести двадцать два", convertInt.Convert());
         }
         [TestMethod]
         public void Test5_2()
         {
-            int number = 17217;
-            Assert.AreEqual("семьнадцать тысяч двестисемьнадцать", convertInt.Convert(number));
+            convertInt.number = 17217;
+            Assert.AreEqual("семнадцать тысяч двести семнадцать", convertInt.Convert());
         }
         [TestMethod]
         public void Test6()
         {
-            int number = 10207;
-            Assert.AreEqual("десять тысяч двестисемь", convertInt.Convert(number));
+            convertInt.number = 10207;
+            Assert.AreEqual("десять тысяч двести семь", convertInt.Convert());
         }
         [TestMethod]
         public void Test7()
         {
-            int number = 60050;
-            Assert.AreEqual("шестьдесят тысяч пятьдесят", convertInt.Convert(number));
+            convertInt.number = 60050;
+            Assert.AreEqual("шестьдесят тысяч пятьдесят", convertInt.Convert());
+        }
+        [TestMethod]
+        public void Test8()
+        {
+            convertInt.number = 123456;
+            Assert.AreEqual("сто двадцать три тысячи четыреста пятьдесят шесть", convertInt.Convert());
+        }
+        [TestMethod]
+        public void Test9()
+        {
+            convertInt.number = 900002;
+            Assert.AreEqual("девятсот тысяч два", convertInt.Convert());
+        }
+        [TestMethod]
+        public void Test10()
+        {
+            convertInt.number = 121212;
+            Assert.AreEqual("сто двадцать одна тысяча двести двенадцать", convertInt.Convert());
         }
     }
 }
