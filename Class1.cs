@@ -89,5 +89,30 @@ namespace TestProject1
             convertInt.number = 121212;
             Assert.AreEqual("сто двадцать одна тысяча двести двенадцать", convertInt.Convert());
         }
+        [TestMethod]
+        public void Test11()
+        {
+            convertInt.number = 123456789;
+            Assert.AreEqual("сто двадцать три миллиона четыреста пятьдесят шесть тысяч семьсот восемдесят девять", convertInt.Convert());
+        }
+        [TestMethod]
+        public void Test12()
+        {
+            convertInt.number = 100400700;
+            Assert.AreEqual("сто миллионов четыреста тысяч семьсот", convertInt.Convert());
+        }
+        [TestMethod]
+        public void Test13()
+        {
+            convertInt.number = 900000009;
+            Assert.AreEqual("девятсот миллионов девять", convertInt.Convert());
+        }
+        [TestMethod]
+        public void Test14()
+        {
+            convertInt.number = 12345678912;
+            Assert.AreEqual("двенадцать триллионов триста сорок пять миллионов шестьсот семдесять восемь тысяч девятсот двенадцать", convertInt.Convert());
+        }
+        
     }
 }
