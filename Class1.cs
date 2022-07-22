@@ -111,14 +111,19 @@ namespace TestProject1
         public void Test14()
         {
             convertInt.number = 12345678912;
-            Assert.AreEqual("двенадцать триллионов триста сорок пять миллионов шестьсот семдесять восемь тысяч девятсот двенадцать", convertInt.Convert());
+            Assert.AreEqual("двенадцать миллиардов триста сорок пять миллионов шестьсот семдесять восемь тысяч девятсот двенадцать", convertInt.Convert());
         }
         [TestMethod]
         public void Test15()
         {
             convertInt.number = 908070605040;
-            Assert.AreEqual("девятсот восемь триллионов семдесять миллионов шестьсот пять тысяч сорок", convertInt.Convert());
-            //девятсотвосемь триллионов семдесять миллионов шестьсотпять тысяч сорок
+            Assert.AreEqual("девятсот восемь миллиардов семдесять миллионов шестьсот пять тысяч сорок", convertInt.Convert());
+        }
+        [TestMethod]
+        public void Test16()
+        {
+            convertInt.number = 908070605040123;
+            Assert.AreEqual("девятсот восемь триллионов семдесять миллиардов шестьсот пять миллионов сорок тысяч сто двадцать три", convertInt.Convert());
         }
     }
 }
