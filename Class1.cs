@@ -137,5 +137,12 @@ namespace TestProject1
             convertInt.number = ",77";
             Assert.AreEqual("ноль рублей семдесят семь копеек", convertInt.Convert());
         }
+        [TestMethod]
+
+        public void Test19()
+        {
+            convertInt.number = "-2,77";
+            Assert.AreEqual("минус два рубля семдесят семь копеек", convertInt.Convert());
+        }
     }
 }
