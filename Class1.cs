@@ -2,7 +2,7 @@
 namespace TestProject1
 {
     [TestClass]
-    public class Class1
+    public class TestConvertInt
     {
         ConvertInt convertInt = new ConvertInt();
         [TestMethod]

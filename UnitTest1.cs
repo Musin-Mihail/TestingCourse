@@ -1,8 +1,8 @@
 using Course;
-namespace TestProject
+namespace TestProject1
 {
     [TestClass]
-    public class UnitTest1
+    public class TestWordsGame
     {
         Words wordsGame = new Words();
         [TestMethod]
